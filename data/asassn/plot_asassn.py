@@ -1,13 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import ascii
-from astropy.table import unique
+from astropy.table import unique,vstack
 
 from datetime import datetime
 from astropy.time import Time
 
 
-fin = 'light_curve_5740d76a-4445-4b58-bc83-4f5b93cf6b31.csv'
+fin = 'light_curve_81989198-027e-414e-9346-94284fcc74b7.csv'
+
+fin='light_curve_5740d76a-4445-4b58-bc83-4f5b93cf6b31.csv'
 t = ascii.read(fin)
 
 print(t)
@@ -59,11 +61,11 @@ V_flux_norm = 15.71
 g_flux_norm = 11.13
 
 
-tV['norm'] = tV['flux(mJy)']/V_flux_norm
-tg['norm'] = tg['flux(mJy)']/g_flux_norm
+tV['fnorm'] = tV['flux(mJy)']/V_flux_norm
+tg['fnorm'] = tg['flux(mJy)']/g_flux_norm
 
-tV['normerr'] = tV['flux_err']/V_flux_norm
-tg['normerr'] = tg['flux_err']/g_flux_norm
+tV['fnormerr'] = tV['flux_err']/V_flux_norm
+tg['fnormerr'] = tg['flux_err']/g_flux_norm
 
 (ax) = plt.subplots(1,1,figsize=(12,6))
 plt.ylabel('Flux [mJy]')
@@ -76,9 +78,13 @@ plt.errorbar(tg['MJD'],tg['flux(mJy)'],yerr=tg['flux_err'],label='g',fmt='.')
 (ax) = plt.subplots(1,1,figsize=(12,6))
 plt.ylabel('Flux [normalised]')
 plt.xlabel('Epoch [MJD]')
-plt.title('data from {}'.format(fin))
-plt.errorbar(tV['MJD'],tV['norm'],yerr=tV['normerr'],label='V',fmt='.',alpha=0.3)
-plt.errorbar(tg['MJD'],tg['norm'],yerr=tg['normerr'],label='g',fmt='.',alpha=0.3)
+plt.title('Normalised ASASSN data {}'.format(fin))
+plt.errorbar(tV['MJD'],tV['fnorm'],yerr=tV['fnormerr'],label='V',fmt='.',alpha=0.3)
+plt.errorbar(tg['MJD'],tg['fnorm'],yerr=tg['fnormerr'],label='g',fmt='.',alpha=0.3)
 
+
+tn = vstack([tV,tg])
+
+tn.write('obs_ASASSN.ecsv',format='ascii.ecsv',overwrite=True)
 
 plt.show()

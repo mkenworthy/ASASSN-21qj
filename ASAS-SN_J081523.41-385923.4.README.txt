@@ -1,0 +1,189 @@
+ASASSN-21qj = ASAS-SN_J081523.41-385923.4
+
+08 15 23.41 -38 59 23.4
+Gaia DR2 5539970601632026752 = GSC 0766000203 = 2MASS J08152329-3859234	= ASASSN-21qj
+123.8470818061359	-38.9898067931547
+Galactic: 	256.3589865680 	-2.2428872608
+
+Best parameters as of 1/2/2022 (see below from VOSA fit) 
+Teff = 5900 +- 74 K
+log(L/Lsun) = 0.046+-0.013 
+Av = 0.05+-0.03
+mbol = 13.39+-0.02
+logg = 4.5+-0.25
+[M/H] = 0.0+-0.23 
+Rad = 1.009 +- 0.030 Rsun
+
+
+appears to be projected towards Dobashi catalog TGU H1656 P2 dark cloud
+in direction of Pup R2 associatioin
+
+plx = 1.7631 	0.0112 mas ; GaiaEDR3
+Dist = 556.22125200 	552.40649400 	559.52728300 pc ; BJ21/geometric (from GaiaEDR3)
+Dist = 556.61395300 	553.44299300 	559.24151600 pc ; BJ21/photogeometric (from GaiaEDR3)
+pm = -9.692 	0.012, 	7.349 	0.012  mas/yr ; GaiaEDR3
+
+
+
+G = 13.370842	0.002788 ; GaiaEDR3
+Bp-Rp = 0.814880 ; EDR 3
+Bp-G = 0.325685 ; EDR3
+G-Rp = 0.489196 ; EDR3	 
+B = 12.65 ; SPM4
+V = 14.55 ; SPM4
+
+2MASS: J is upper limit only H & Ks available
+12.031 	0.038 	0.039 	222.1	11.987 	0.037 	0.038
+J > 12.065 ; 2M 
+H = 12.031 0.039 ; 2M
+Ks = 11.987 0.038 ; 2M 
+
+Teff = 5750 K ; VOSA/SED
+Teff = 5816 (5798, 5902) ; GaiaDR2
+Teff = 5916 221 K ; Bail19
+Teff = 7370 +- 139 K ; TIC/Stassun19
+Teff = 7519.04 	7961.90 	8307.35 ; Starhorse/Anders19
+logg = 4.6876 0.0809 ; TIC/Stassun19
+logg = 4.462444 	4.513399 	4.559137 ; Anders19/Starhorse
+A_G = 0.0857 (0.0170-0.1950) ; GaiaDR2
+
+Rad = 1.03 (1.00, 1.04) ; Gaia DR2
+Rad = 0.972 0.036 ; Stassun19/TIC
+Lum = 1.104 (1.072, 1.136) ; Gaia DR2
+Lum = 2.51378 	0.12202 ; Stassun/TIC9
+Mass = 1.680 0.271 ; Stassun19/TIC
+Mass = 1.017964 	1.087426 	1.148026 ; ANders19/Starhorse
+Metallicity = -2.168184	-2.153477	-2.086332 ; Starhorse/Anders19 
+
+total extinction in this direction: A_g = 7.486 ; Tonry18
+E(B-V) = 0.3435 0.0099 	; Stassun19/TIC8
+
+E(B-V) = 0.088 0.037 ; STILISM  (but surprisingly max in field is 0.209 +1.673-0.218 [having problem with clouds?]
+=> Av ~ 0.282 (for Rv=3.2) 
+ but seems reasonable compared with neighboring hot stars (E(B-V) ~ 0.03-0.2)
+E(B-V) 2sigma range = 0.014-0.162
+Av 2sigma range (for Rv=3.2) = 0.0448 0.5184 ~ 0.05-0.5 
+
+Av = 0.836653 	1.015036 	1.216778 ; Starhorse/Anders19 (1sig limits given)
+
+### ABSOLUTE MAGNITUDE
+V=14.55, plx=1.7631 mas, Av=0.282
+=> Mv = 5.499 
+
+### NEARBY STARS
+
+### CD-38 4227 is 121" away at slightly larger distance  
+SpT = A3
+plx = 1.9593 [0.0402] A 2018yCat.1345....0G
+Dist = 501.67 (495.91015600 	507.49377400) ; Bailerjones21	
+B = 9.94 ; SPM4
+B = 9.968 	0.021 ; Kharchenko09
+V = 9.87 ; TYC
+V = 9.82 ; SPM4
+V = 9.840 	0.027 ; Kharchenko09
+B-V = 0.128 ; Kharchenko
+(B-V)o(A3) = 0.10 
+=> E(B-V) = 0.128 - 0.10 = 0.028 
+
+so maybe adopt lower bound of E(B-V) = 0.03 ?
+
+### HD 69929 
+SpT = B3V
+plx = 1.4859 [0.0425] A 2018yCat.1345....0G 
+relocate  124.42    -39.10    
+label  HD69929/B3V/plx1.5/pm=-5,+5/B-V=0.031,E(B-V)~0.209 
+
+
+### HD 68982
+SpT = B3V 
+plx = 1.5806 [0.0333] A 2018yCat.1345....0G 
+associated with RfN VdBH 7
+NGC 2546???
+
+
+others
+       relocate  124.65    -38.76    label  HD70080/B3/plx1.6/pm=-5,+5/B-V=-0.047,E(B-V)~0.131
+       relocate  124.08    -39.85    label  HD69646/B3/plx1.3/pm=-6,+5/B-V=0.014,E(B-V)~0.192
+
+
+In Zari21 hot star catalog, the only hot stars with parallax within +-0.2 mas are:
+#  sep'         GaiaEDR3                RA               Dec 
+1  8.5428	5539986097874074752	123.66999501570	-38.95492380750 pm = 7.22 mas/yr, plx = 1.5650, D=633pc
+2  27.6177	5540280595194338304	124.42204333750	-39.10295438050 pm = 7.59 mas/yr, plx = 1.5903, D=623pc 
+
+
+
+
+### TANGENTIAL VELOCITY
+
+Enter pmRA, pmDec, err(pmRA), err(pmDec) [mas/yr]
+-9.692 7.349 0.012 0.012 
+ Enter Parallax & error [mas]
+1.7631 	0.0112 
+PmTot =        12.16 +-         0.02 mas/yr
+ Dist =       567.18 +-         3.60 pc 
+ Vtan =        32.70 +-         0.21 km/s 
+
+
+
+### SED VOSA
+
+left all values unconstrained
+123.8470818061359 	-38.9898067931547 	567.183 	Kurucz2003, alpha:0.0 	0.05 	5750 	5 	-1.5 	--- 	2.121e+2 	1.899e-21 	0.68 	1.191e+0 	3.684e-2 	20/22	Syn.Spec.
+Av=0.05
+Teff = 5750K
+logg = 5.0
+[M/H] = -1.5 
+Lum =  	1.191e+0 	3.684e-2 Lsun 
+logL =  0.07591 +   0.01323 -   0.01365 +-   0.01344
+
+
+what if you hold metalliiciity -0.5 to +0.2 and constrain logg=4-4.5?
+
+123.8470818061359 	-38.9898067931547 	567.183 	Kurucz2003, alpha:0.0 	0.05 	5750 	4 	-0.5 	--- 	2.196e+2 	1.826e-21 	0.70 	1.149e+0 	3.475e-2 	20/22	Syn.Spec.
+
+Av=0.05
+Teff = 5750K
+logg =4.0
+[M/H] = -0.5 
+Lum = 1.149e+0 	3.475e-2 Lsun
+logL = 0.060320 +  0.012940 -  0.013337 +-  0.013139 => 1.149+-0.035 Lsun 
+
+
+New VOSA 7.0 fit 1/2/2022, only constraining to logg=4-4.5, not letting for a IR excess (none)
+Kurucz2003, alpha:0.0 	0.05 	5750 	4.5 	-1 	--- 	2.134e+2 	1.870e-21 	0.69 	1.173e+0 	3.989e-2 	20/22	Syn.Spec.
+Teff = 5750 +- 125 K
+logg = 4.5
+[M/H] = -1
+L/Lsun = 1.173e+0 3.989e-2 => 1.173+-0.0399 Lsun 
+=> log(L/Lsun) = 0.069298 +0.014523 -0.015026 (+-0.014775)
+
+fbol = 1.167e-10 +- 2.484e-12 erg/s/cm2
+Av = 0.05 
+Rad1 = 1.088 +- 0.006911 Rsun
+Rad2 = 1.092 +- 0.05096 Rsun  	
+
+Revised VOSA fit 7.0: But fit is a bit odd through near-IR and IR (few bumps and wiggles). Let's allow an IR excess for the WISE bands. 
+
+BT-Settl-AGSS2009 	0.05 	5900 	4.5 	0 	--- 	6.415e+1 	1.624e-21 	0.71 	1.112e+0 	3.437e-2 	17/22	Syn.Spec.
+Teff = 5900 +- 74 K (5827.45, 5991.18; 1sigma limits; 5800,6100 2sig lims) 
+log= 4.5 +- 0.25
+[M/H] = 0.0 +- 0.231 
+L/Lsun = 1.112e+0 3.437e-2 => 1.112+-0.03437 Lsun 
+log(L/Lsun) = 0.046105 +0.013220 -0.013635 +-0.013428
+fbol = 1.106e-10 +- 2.013e-12 erg/s/cm2
+=> mbol = 13.3931 +- 0.0198  mag
+Av = 0.05 +- 0.0266 
+Rad1 = 1.014e+0 6.440e-3 Rsun
+Rad2 = 1.009e+0 2.976e-2 Rsun 
+
+
+Teff = 5900 +- 74 K
+log(L/Lsun) = 0.046+-0.013 
+Av = 0.05+-0.03
+mbol = 13.39+-0.02
+logg = 4.5+-0.25
+[M/H] = 0.0+-0.23 
+Rad = 1.009 +- 0.030 Rsun
+
+
